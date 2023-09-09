@@ -8,17 +8,7 @@
 	width : 100%;
 }
 
-.container{
-	padding : 0 2rem;
-	height : auto;
-	display : grid;
-	grid-template-columns :  repeat(3,1fr);
-	grid-template-rows : minmax(13rem,min-content) minmax(13rem,min-content) minmax(13rem,min-content); 
-	
-	grid-gap : 20px 20px;
-	
-	grid-auto-rows : maxmin(13rem, min-content);
-}
+
 .box1{
 	background : red;
 	/* min-height : 6rem; */
@@ -56,4 +46,18 @@
 	background : orange;
 	padding : 1rem;
 	
+}
+
+
+@media all and (min-width : 776px){
+	.container{
+	padding : 0 2rem;
+	height : auto;
+	display : grid;
+	grid-template-columns :  repeat(3,1fr);
+	grid-template-rows : minmax(13rem,min-content) minmax(13rem,min-content) minmax(13rem,min-content); 
+	
+	grid-gap : 20px 20px;
+	
+	grid-auto-rows : maxmin(13rem, min-content);
 }
